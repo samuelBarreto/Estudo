@@ -1,0 +1,42 @@
+version: "3.8"
+services:
+  
+  backend:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      image: api-sql:2
+      env_file: ./.env
+      ports:
+        - 8080:8080
+      depends_on:
+        mysql:
+          condition: service_healthy
+      environment:
+        - SPRING_DATASOURCE_URL=$SPRING_DATASOURCE_URL
+      networks:
+        - spring-cloud-network
+
+  mysql:
+    container_name: mysql
+    image: 'mysql:latest'
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - MYSQL_DATABASE=$SPRING_DATASOURCE_URL
+      - MYSQL_PASSWORD=$SPRING_DATASOURCE_PASSWORD
+      - MYSQL_ROOT_PASSWORD=$MYSQLDB_ROOT_PASSWORD
+      - MYSQL_USER=$SPRING_DATASOURCE_USERNAME
+      - SPRING_DATASOURCE_URL=$SPRING_DATASOURCE_URL
+    ports:
+      - 3306:3306
+    healthcheck:
+      test: ["CMD","echo 'SELECT version();'| mysql"]
+      timeout: 20s
+      retries: 10     
+    networks:
+      - spring-cloud-network
+      
+networks:
+    spring-cloud-network:
+        driver: bridge
