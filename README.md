@@ -5,7 +5,7 @@ Estudo de TI relacinado a aplicação (api rest), devops, observability e novida
 
 
 
-## Spring Boot 3, MySQL, Spring Data JPA, Hibernate CRUD REST API 
+## Spring Boot 3, MySQL, Spring Data JPA, Hibernate CRUD REST API  DATADOG AGENT
 
 CRUD significa “criar, ler, atualizar e excluir”, que são as quatro funções básicas do armazenamento persistente. Spring Boot é uma estrutura baseada em Java usada para construir aplicativos web e APIs RESTful. Juntos, Spring Boot e CRUD podem ser usados ​​para desenvolver rapidamente uma API RESTful que pode criar, ler, atualizar e excluir dados em um banco de dados.
 
@@ -31,7 +31,7 @@ CRUD significa “criar, ler, atualizar e excluir”, que são as quatro funçõ
   wget -O dd-java-agent.jar 'https://dtdg.co/latest-java-tracer'
  ```
 
-## Execute localmente
+## Execute localmente - Este Projeto Rodar me Docker-composer 
 
 Clonar o projeto
 
@@ -43,12 +43,6 @@ Vá para o diretório do projeto
 
 ```bash
   cd Estudo
-```
-
-Instalar dependências
-
-```bash
-  mvn mvn clean install
 ```
 
 start o docker-composer
