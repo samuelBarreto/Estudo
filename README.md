@@ -13,9 +13,7 @@ CRUD significa “criar, ler, atualizar e excluir”, que são as quatro funçõ
 ## Pré-requisito
 
 <p float="left">
-
- <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/Spring%20Boot%20Project%20Structure.PNG" width="500" />
-
+    <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/Spring%20Boot%20Project%20Structure.PNG" width="500" />
 </p>
 
  o que você precisa ter no seu Desktop 
@@ -82,9 +80,7 @@ Método HTTP: Corpo da solicitação POST :
 Consulte esta captura de tela para testar a API REST de criação de usuário:
 
 <p float="left">
-
  <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/post_user.png" width="380" />
-
 </p>
 
 Obtenha a API REST do usuário:
@@ -94,7 +90,5 @@ Método HTTP: GET
 Consulte esta captura de tela para testar a API REST do usuário GET:
 
 <p float="left">
-
  <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/get_user_1.png" width="380" />
-
 </p>
