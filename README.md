@@ -63,3 +63,24 @@ stop o docker-composer
 ```bash
   docker compose -f "compose.yaml" down
 ```
+
+
+
+## Referência de API
+
+Criar API REST do usuário:
+
+URL de solicitação:  http://localhost:8080/api/users
+Método HTTP: Corpo da solicitação POST :
+```bash
+  {
+    "firstName": "ramesh",
+    "lastName":"fadatare",
+    "email": "ramesh@gmail.com"
+  }
+```
+<p float="left">
+
+ <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/post_user.png" width="300" />
+
+</p>
