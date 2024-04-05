@@ -72,9 +72,9 @@ URL de solicitação:  http://localhost:8080/api/users
 Método HTTP: Corpo da solicitação POST :
 ```bash
   {
-    "firstName": "ramesh",
-    "lastName":"fadatare",
-    "email": "ramesh@gmail.com"
+    "firstName": "teste",
+    "lastName":"teste",
+    "email": "teste@gmail.com"
   }
 ```
 Consulte esta captura de tela para testar a API REST de criação de usuário:
@@ -91,4 +91,20 @@ Consulte esta captura de tela para testar a API REST do usuário GET:
 
 <p float="left">
  <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/get_user_1.png" width="380" />
+</p>
+
+Atualizar API REST do usuário:
+URL de solicitação:  http://localhost:8080/api/users/1
+Método HTTP:  Corpo da solicitação PUT
+
+```bash
+  {
+    "firstName": "teste1",
+    "lastName":"teste1",
+    "email": "teste1@gmail.com"
+  }
+``
+Consulte esta captura de tela para testar a API REST de atualização do usuário:
+<p float="left">
+ <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/put_user_1.png" width="380" />
 </p>
