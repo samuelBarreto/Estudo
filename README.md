@@ -19,10 +19,11 @@ CRUD significa “criar, ler, atualizar e excluir”, que são as quatro funçõ
 </p>
 
  o que você precisa ter no seu Desktop 
-
-   - java 17 
-   - maven
-   - mysql
+   
+   - git
+   - Java 17 
+   - Maven
+   - Banco de dados MySQL
    - docker
    - docker-compose
 
@@ -32,5 +33,33 @@ CRUD significa “criar, ler, atualizar e excluir”, que são as quatro funçõ
   wget -O dd-java-agent.jar 'https://dtdg.co/latest-java-tracer'
  ```
 
+## Execute localmente
 
-    
+Clonar o projeto
+
+```bash
+  git clone https://github.com/samuelBarreto/Estudo.git
+```
+
+Vá para o diretório do projeto
+
+```bash
+  cd Estudo
+```
+
+Instalar dependências
+
+```bash
+  mvn mvn clean install
+```
+
+start o docker-composer
+
+```bash
+  docker compose -f "compose.yaml" up -d --build
+```
+stop o docker-composer
+
+```bash
+  docker compose -f "compose.yaml" down
+```
