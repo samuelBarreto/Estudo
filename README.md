@@ -126,7 +126,7 @@ Método HTTP: DELETE
 Consulte esta captura de tela para testar a API REST de exclusão de usuário:
 
 <p float="left">
- <img src="" width="380" />
+ <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/delete_user_1.png" width="380" />
 </p>
 
 
