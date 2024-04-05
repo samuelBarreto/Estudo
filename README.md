@@ -103,7 +103,8 @@ Método HTTP:  Corpo da solicitação PUT
     "lastName":"teste1",
     "email": "teste1@gmail.com"
   }
-``
+```
+
 Consulte esta captura de tela para testar a API REST de atualização do usuário:
 <p float="left">
  <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/put_user_teste1.png" width="380" />
