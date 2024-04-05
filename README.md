@@ -14,7 +14,7 @@ CRUD significa “criar, ler, atualizar e excluir”, que são as quatro funçõ
 
 <p float="left">
 
- <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/Spring%20Boot%20Project%20Structure.PNG" width="200" />
+ <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/Spring%20Boot%20Project%20Structure.PNG" width="500" />
 
 </p>
 
