@@ -79,8 +79,22 @@ Método HTTP: Corpo da solicitação POST :
     "email": "ramesh@gmail.com"
   }
 ```
+Consulte esta captura de tela para testar a API REST de criação de usuário:
+
 <p float="left">
 
- <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/post_user.png" width="300" />
+ <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/post_user.png" width="380" />
+
+</p>
+
+Obtenha a API REST do usuário:
+URL de solicitação:  http://localhost:8080/api/users/1
+Método HTTP: GET
+
+Consulte esta captura de tela para testar a API REST do usuário GET:
+
+<p float="left">
+
+ <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/get_user_1.png" width="380" />
 
 </p>
