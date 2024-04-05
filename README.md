@@ -26,6 +26,11 @@ CRUD significa “criar, ler, atualizar e excluir”, que são as quatro funçõ
    - docker
    - docker-compose
 
+ Instale o cliente DATADOG APM JAVA 
+
+ ```bash
+  wget -O dd-java-agent.jar 'https://dtdg.co/latest-java-tracer'
+ ```
 
 
     
