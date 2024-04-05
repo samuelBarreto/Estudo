@@ -106,5 +106,28 @@ Método HTTP:  Corpo da solicitação PUT
 ``
 Consulte esta captura de tela para testar a API REST de atualização do usuário:
 <p float="left">
- <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/put_user_1.png" width="380" />
+ <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/put_user_teste1.png" width="380" />
 </p>
+
+Obtenha a API REST de todos os usuários:
+URL de solicitação:  http://localhost:8080/api/users
+Método HTTP: GET
+
+Consulte esta captura de tela para testar a API REST GET All User:
+
+<p float="left">
+ <img src="https://github.com/samuelBarreto/Estudo/blob/main/imagem/get_user_all.png" width="380" />
+</p>
+
+EXCLUIR API REST do usuário:
+URL de solicitação:  http://localhost:8080/api/users/1
+Método HTTP: DELETE
+
+Consulte esta captura de tela para testar a API REST de exclusão de usuário:
+
+<p float="left">
+ <img src="" width="380" />
+</p>
+
+
+Neste tutorial, criamos um projeto de inicialização Spring e construímos serviços da Web CRUD RESTful usando Spring Boot 3 , Spring Data JPA (Hibernate) e banco de dados MySQL Com Bibliotera cliente do APM do Datadog e tinylog para observability da aplicação 
