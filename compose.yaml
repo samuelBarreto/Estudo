@@ -1,19 +1,18 @@
 version: "3.8"
 services:
 
-  datadog:
+  datadog-agent:
     image: gcr.io/datadoghq/agent:7
-    container_name: dd-agent
+    container_name: datadog-agent
     env_file: ./.env
     restart: always
     environment:
       - DD_API_KEY=$YOUR_DATADOG_API_KEY
       - DD_SITE=datadoghq.com
-      - DD_HOSTNAME=$YOUR_SERVER_NAME
       - DD_APM_ENABLED=true
+      - DD_APM_NON_LOCAL_TRAFFIC=true
       - DD_LOGS_ENABLED=true
       - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
-      - DD_DOGSTATSD_NON_LOCAL_TRAFFIC=true
       - DD_CONTAINER_EXCLUDE=image:gcr.io/datadoghq/agent*
       - DD_CONTAINER_EXCLUDE_METRICS=image:gcr.io/datadoghq/agent*
       - DD_CONTAINER_EXCLUDE_LOGS=image:gcr.io/datadoghq/agent*
@@ -34,14 +33,20 @@ services:
         com.datadoghq.tags.env: 'prd'
         com.datadoghq.tags.service: 'api-sql'
         com.datadoghq.tags.version: "1"
+      environment:
+        - DD_ENV="prd" 
+        - DD_SERVICE="api-sql" 
+        - DD_VERSION="1" 
+        - DD_AGENT_HOST="datadog-agent" 
+        # - DD_TRACE_AGENT_PORT="8126"
+        - DD_LOGS_INJECTION=true 
+        - SPRING_DATASOURCE_URL=$SPRING_DATASOURCE_URL
       env_file: ./.env
       ports:
         - 8080:8080
       depends_on:
         mysql:
           condition: service_healthy
-      environment:
-        - SPRING_DATASOURCE_URL=$SPRING_DATASOURCE_URL
       networks:
         - spring-cloud-network
 
@@ -66,4 +71,4 @@ services:
       
 networks:
     spring-cloud-network:
-        driver: bridge
+
