@@ -5,13 +5,17 @@ on:
     branches:
       - "main"
 
+env:
+  DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+  DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       -
-        name: Checkout
+        name: Checkout out the repo
         uses: actions/checkout@v4
       -
         name: Login to Docker Hub
